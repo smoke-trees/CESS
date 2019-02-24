@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/index.css">
+
+    <script src="{{ url_for('static', filename='baffle.min.js') }}"></script>
+</head>
+<body
+style="padding: 40px 10px; background-image: url('https://www.hackthebox.eu/images/landing/landing-pattern.png');">
+
+<div id="particles-js"></div>
+
+<div class="container" style="text-align: center; padding-top: 200px">
+    <h1 class="headline" style="color: #66f52b">Enter a string to test toxicity.</h1>
+    <div style="padding-top: 20px" class="form-updates">
+        <p style="color: white">Comment sample: {{ comments }}</p>
+    </div>
+
+    <div style="padding-top: 100px">
+        <table class="table table-bordered" style="color: white" >
+            <tr>
+                <th>Toxicity</th>
+                <th>Present</th>
+            </tr>
+            <tr>
+                <td>Toxic</td>
+                <td>{{ send[0] }}</td>
+            </tr>
+            <tr>
+                <td>Severely toxic</td>
+                <td>{{ send[1] }}</td>
+            </tr>
+            <tr>
+                <td>Obscene</td>
+                <td>{{ send[2] }}</td>
+            </tr>
+            <tr>
+                <td>Threat</td>
+                <td>{{ send[3] }}</td>
+            </tr>
+            <tr>
+                <td>Insult</td>
+                <td>{{ send[4] }}</td>
+            </tr>
+            <tr>
+                <td>Identity hatred</td>
+                <td>{{ send[5] }}</td>
+            </tr>
+        </table>
+        <div>
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script src="{{ url_for('static', filename='app.js') }}"></script>
+    </div>
+
+</body>
+</html>

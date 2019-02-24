@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 40px 10px;
+  background-color: black;
+  font-family: "Noto Sans Mono CJK JP Bold", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://www.hackthebox.eu/images/landing/landing-pattern.png");
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 0 2rem;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 0 2rem;
+  color: cornflowerblue;
+}
+
+.form-updates {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+
+.form-updates {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.form-updates input {
+  width: 100%;
+  margin: 0px 0 10px;
+}
+
+.form-updates .btn {
+  flex: 1 0 100%;
+}
+
+label {
+  color: white;
+}
+
+li {
+  margin: 0 0 1rem;
+  font-size: xx-large;
+}
+
+hr {
+  color: transparent;
+  background: transparent;
+  margin: 0;
+  height: 1rem;
+}
+
+#particles-js{
+  position:absolute;
+  top:0;
+  width:100%;
+  height:100%;
+  z-index: -100;
+}
+
+#root {
+  position: relative;
+}
+
+#wrapper{
+  position: relative;
+}
+
+
+
+
+
+
+

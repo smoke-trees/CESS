@@ -1,0 +1,5 @@
+venv
+*.pyc
+
+# twitter API keys
+twitter_credentials.json
