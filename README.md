@@ -68,7 +68,7 @@ To install CESS, follow these steps:
 
 2. Navigate to the project directory:
    ```
-   cd CESS
+   cd Elections - React 
    ```
 
 3. Install dependencies:
